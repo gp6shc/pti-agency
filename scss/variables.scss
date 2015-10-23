@@ -1,0 +1,15 @@
+// brand colors
+$primary-blue: #005CBA; 		// dark blue	 			ex - nav bar background color
+$secondary-blue: #0780E2; 	// light blue
+$brand-green: #00AA71; 			// highlight green	ex - get a quote button background color
+$brand-black: #323132; 			// dark grey	 			ex - topbar background color
+$brand-grey: #626569; 			// medium grey
+$brand-white: #EAEBEC; 			// light grey
+
+// fonts
+// $font-body: Georgia,Helvetica,Arial; 			// 400regular,400italic
+$font: "museo-sans",sans-serif,serif;					// 100,100italic,300,300italic,500,500italic,700
+
+// text colors
+$text-blue-light: #7eedff;
+$text-blue-dark: darken($primary-blue, 18%);

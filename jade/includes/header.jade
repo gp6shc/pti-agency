@@ -1,0 +1,29 @@
+.top-bar
+	.contain
+		//- only if logged in...
+		span.login-status Logged in as: Username
+		
+		span.user-actions
+			a(href='#') Logout
+			a(href='#') PTS
+			a(href='#') Contact
+			
+		//- Otherwise...
+		//-
+			span.user-actions
+				a(href='#') Login
+				a(href='#') PTS
+				a(href='#') Contact
+		
+		span.search-form
+			form
+				input.search(
+					type='search'
+					placeholder='search'
+					required
+				)
+				input.submit(
+					type='submit'
+					value='Go'
+					title='Search'
+				)

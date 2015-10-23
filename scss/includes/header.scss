@@ -1,0 +1,93 @@
+.top-bar {
+	height: 52px;
+	background-color: $brand-black;
+	color: white;
+	font-size: 0.875em;
+	
+	.contain {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	
+	span {
+		margin: 0 1.7%;
+	}
+}
+
+.user-actions {
+	a {
+		color: white;
+		text-decoration: none;
+				
+		+ a {
+				margin-left: 8px;
+				border-left: 1px solid white;
+				padding-left: 8px;
+		}
+		
+		&:hover {
+			color: lighten($secondary-blue, 5%);
+		}
+		
+		&:focus {
+			color: lighten($secondary-blue, 5%);
+		}
+	}
+}
+
+.search-form {
+	form {
+		display: inline;
+	}
+}
+
+.search {
+	color: $brand-grey;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 4px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 2px solid white;
+	appearance: none;
+	transition: border-color 200ms;
+	
+	&:focus {
+		outline: none;
+		border-color: darken($brand-green, 5%);
+	}
+}
+
+.submit {
+	padding: 4px 7px;
+	margin-left: -4px;
+	background-color: $brand-green;
+	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z" fill="#fff"/></svg>');
+	background-repeat: no-repeat;
+  background-position: 46% 25%;
+  background-size: 66%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 2px solid $brand-green;
+	transition: border-color 200ms, background-color 200ms;
+	color: transparent;
+	
+	&:hover {
+		border-color: darken($brand-green, 5%);
+		background-color: darken($brand-green, 5%);
+		animation: pulseGreen 1s infinite;
+	}
+	
+	&:focus {
+		border-color: darken($brand-green, 5%);
+		background-color: darken($brand-green, 5%);
+		outline: none;
+		animation: pulseGreen 1s infinite;
+	}
+}
+
+@keyframes pulseGreen {
+	0%, 100% {border-color: darken($brand-green, 8%);background-color: darken($brand-green, 8%);}
+	50% 		 {border-color: $brand-green;background-color: $brand-green;}	
+}
