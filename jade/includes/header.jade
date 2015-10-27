@@ -1,29 +1,221 @@
-.top-bar
-	.contain
-		//- only if logged in...
-		span.login-status Logged in as: Username
-		
-		span.user-actions
-			a(href='#') Logout
-			a(href='#') PTS
-			a(href='#') Contact
+header
+	.top-bar
+		.contain
+			//- only if logged in...
+			span.login-status Logged in as: Username
 			
-		//- Otherwise...
-		//-
 			span.user-actions
-				a(href='#') Login
+				a(href='#') Logout
 				a(href='#') PTS
 				a(href='#') Contact
-		
-		span.search-form
-			form
-				input.search(
-					type='search'
-					placeholder='search'
-					required
-				)
-				input.submit(
-					type='submit'
-					value='Go'
-					title='Search'
-				)
+				
+			//- Otherwise...
+			//-
+				span.user-actions
+					a(href='#') Login
+					a(href='#') PTS
+					a(href='#') Contact
+			
+			span.search-form
+				form
+					input.search(
+						type='search'
+						placeholder='search'
+						required
+					)
+					input.submit(
+						type='submit'
+						value='Go'
+						title='Search'
+					)
+	nav
+		.contain
+			include ../../svg/pti-logo.svg
+			.menu-contain
+				ul.menu
+					li.hasSubMenu About
+						.sub-menu.contain
+							ul
+								li.title h03 Landing Page
+								li 
+									a(href='#') 
+									a(href='#') Policy Insurance / Eligibility
+								li 
+									a(href='#') 
+									a(href='#') Tri-County Guidelines
+								li 
+									a(href='#') Personal Property Special Limits and Deductibles
+								li 
+									a(href='#') Exclusions
+								li 
+									a(href='#') Discounts
+								li 
+									a(href='#') FAQs
+							ul
+								li.title Basic Choice
+								li 
+									a(href='#') Policy Issuance
+								li 
+									a(href='#') Tri-County Guidelines
+								li 
+									a(href='#') Perils Insured
+								li 
+									a(href='#') Exclusions
+								li 
+									a(href='#') Discounts
+								li 
+									a(href='#') FAQs
+							ul
+								li.title Insurance Guidelines
+								li 
+									a(href='#') New Business Submissions UNDER $1M TIV
+								li 
+									a(href='#') New Business Submissions $1M and Over TIV
+								li 
+									a(href='#') Construction and Roofing
+								li 
+									a(href='#') Endorsement e011
+								li 
+									a(href='#') Dedectibles
+								li 
+									a(href='#') Uninsurable Properties
+								li 
+									a(href='#') Preferred Contractor Endorsement
+							ul
+								li.title Underwriting
+								li 
+									a(href='#') Guidelines
+								li 
+									a(href='#') Underwriting Guide PDF
+								li 
+									a(href='#') Underwriting Forms
+							ul
+								li.title Important Announcements
+								li 
+									a(href='#') BC Requires Inspections
+								li 
+									a(href='#') Wind Mit Credit Change
+					li.hasSubMenu Products
+						.sub-menu.contain
+							ul
+								li.title h03 Landing Page
+								li 
+									a(href='#') Policy Insurance / Eligibility
+								li 
+									a(href='#') Tri-County Guidelines
+								li 
+									a(href='#') Personal Property Special Limits and Deductibles
+								li 
+									a(href='#') Exclusions
+								li 
+									a(href='#') Discounts
+								li 
+									a(href='#') FAQs
+							ul
+								li.title Basic Choice
+								li 
+									a(href='#') Policy Issuance
+								li 
+									a(href='#') Tri-County Guidelines
+								li 
+									a(href='#') Perils Insured
+								li 
+									a(href='#') Exclusions
+								li 
+									a(href='#') Discounts
+								li 
+									a(href='#') FAQs
+							ul
+								li.title Insurance Guidelines
+								li 
+									a(href='#') New Business Submissions UNDER $1M TIV
+								li 
+									a(href='#') New Business Submissions $1M and Over TIV
+								li 
+									a(href='#') Construction and Roofing
+								li 
+									a(href='#') Endorsement e011
+								li 
+									a(href='#') Dedectibles
+								li 
+									a(href='#') Uninsurable Properties
+								li 
+									a(href='#') Preferred Contractor Endorsement
+							ul
+								li.title Underwriting
+								li 
+									a(href='#') Guidelines
+								li 
+									a(href='#') Underwriting Guide PDF
+								li 
+									a(href='#') Underwriting Forms
+							ul
+								li.title Important Announcements
+								li 
+									a(href='#') BC Requires Inspections
+								li 
+									a(href='#') Wind Mit Credit Change
+					li.hasSubMenu Services
+						.sub-menu.contain
+							ul
+								li.title h03 Landing Page
+								li 
+									a(href='#') Policy Insurance / Eligibility
+								li 
+									a(href='#') Tri-County Guidelines
+								li 
+									a(href='#') Personal Property Special Limits and Deductibles
+								li 
+									a(href='#') Exclusions
+								li 
+									a(href='#') Discounts
+								li 
+									a(href='#') FAQs
+							ul
+								li.title Basic Choice
+								li 
+									a(href='#') Policy Issuance
+								li 
+									a(href='#') Tri-County Guidelines
+								li 
+									a(href='#') Perils Insured
+								li 
+									a(href='#') Exclusions
+								li 
+									a(href='#') Discounts
+								li 
+									a(href='#') FAQs
+							ul
+								li.title Insurance Guidelines
+								li 
+									a(href='#') New Business Submissions UNDER $1M TIV
+								li 
+									a(href='#') New Business Submissions $1M and Over TIV
+								li 
+									a(href='#') Construction and Roofing
+								li 
+									a(href='#') Endorsement e011
+								li 
+									a(href='#') Dedectibles
+								li 
+									a(href='#') Uninsurable Properties
+								li 
+									a(href='#') Preferred Contractor Endorsement
+							ul
+								li.title Underwriting
+								li 
+									a(href='#') Guidelines
+								li 
+									a(href='#') Underwriting Guide PDF
+								li 
+									a(href='#') Underwriting Forms
+							ul
+								li.title Important Announcements
+								li 
+									a(href='#') BC Requires Inspections
+								li 
+									a(href='#') Wind Mit Credit Change
+					li 
+						a(href='#') Resources
+					li 
+						a(href='#') News
