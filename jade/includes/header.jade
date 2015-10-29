@@ -30,8 +30,9 @@ header
 					)
 	nav
 		.contain
-			include ../../svg/pti-logo.svg
-			.menu-contain
+			a(href='/')
+				include ../../svg/pti-logo.svg
+			.menu-contain#js-sideMenu
 				ul.menu
 					li.hasSubMenu About
 						.sub-menu.contain
@@ -218,4 +219,5 @@ header
 					li 
 						a(href='#') Resources
 					li 
-						a(href='#') News
+						a(href='/news.html') News
+			.hamburger#js-hamburger
