@@ -1,0 +1,24 @@
+@import '../includes/bootstrap-grid';
+
+body {
+	&.login {
+		background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/textured_paper.png'); //placeholder
+	}	
+}
+
+.container.login {
+	.panel {
+		background: white;
+        border-radius: 15px;
+	}
+	
+	.panel-heading {
+		//
+	}
+	
+	.panel-body {
+		//
+	}
+}
+
+

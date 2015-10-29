@@ -64,6 +64,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/jade\/login.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/login.jade",
+		"outputAbbreviatedPath": "\/login.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/jade\/news.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -128,6 +139,22 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/scss\/includes\/bootstrap-grid.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/includes\/bootstrap-grid.scss",
+		"outputAbbreviatedPath": "\/scss\/css\/bootstrap-grid.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/scss\/includes\/footer.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -153,6 +180,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/includes\/header.scss",
 		"outputAbbreviatedPath": "\/scss\/css\/header.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/includes\/login.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/includes\/login.scss",
+		"outputAbbreviatedPath": "\/scss\/css\/login.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -211,7 +254,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Mike Reinhard",
+"lastSavedByUser": "Brian",
 "manualImportLinks": {
 	"\/js\/site.js": [
 		{
