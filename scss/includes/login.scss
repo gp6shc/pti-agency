@@ -4,21 +4,30 @@
 
 // MIXIN
 @mixin breakpoint($point) { //media query breakpoint; for usage within layout stylesheet
-  @if $point == sm {
+  @if $point == md {
     @media (min-width: 768px) { @content; }
+  }
+  @else if $point == sm {
+    @media (max-width: 768px) { @content; }
   }
 }
 
 body {
 	&.login {
+		height: auto;
+		@include breakpoint(md) { //only show scrollbars on sm
+			min-height: 100vh;
+			height: 100vh;
+		}
 		background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/textured_paper.png'); //placeholder
+		overflow-x: hidden;
 	}	
 }
 
 .container.login {
 
 	.panel {
-		padding: 30px;
+		padding: 25px;
 		background: white;
         border-radius: 15px;
         box-shadow: 0 0 15px rgba($brand-grey,0.75);
@@ -40,11 +49,12 @@ body {
 	.panel-footer {
         margin-top: 30px;
         padding-top: 10px;
+        color: $brand-grey;
         border-top: 2px solid $brand-white;
         p {
 	        font-style: italic;
 	        a {
-	        	color: inherit;
+	        	color: $brand-grey;
 				text-decoration: none;
 				&:hover {
 		        	color: $primary-blue;
@@ -87,11 +97,59 @@ form.login {
 		border: none;
 		text-transform: uppercase;
 		transition: background-color ease-in-out .3s;
-		@include breakpoint(sm) {
+		@include breakpoint(md) {
 			max-width: 150px;
 		}
 		&:hover {
 			background-color: darken($brand-green,7%);
+		}
+	}
+	
+}
+
+.footer.login {
+	position: fixed;
+	height: auto;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    @include breakpoint(md) {
+    	height: 65px;
+    }
+    
+    .contain {
+	    height: 100%;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+	.copyright {
+		margin: 0;
+		padding: 15px 0;
+		color: $brand-grey;
+		text-align: center;
+		@include breakpoint(md) {
+    		float: right;
+    		padding: 0;
+		}
+		a {
+			color: $brand-grey;
+			margin: 0 10px;
+			@include breakpoint(md) {
+				margin-right: 60px;
+			}
+		}
+	}
+	.copy-text {
+		display: block;
+		margin: 25px auto 0;
+		@include breakpoint(md) {
+			display: inline-block;
 		}
 	}
 	

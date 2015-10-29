@@ -1454,10 +1454,16 @@ footer {
   box-sizing: border-box; }
 
 body.login {
-  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/textured_paper.png"); }
+  height: auto;
+  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/textured_paper.png");
+  overflow-x: hidden; }
+  @media (min-width: 768px) {
+    body.login {
+      min-height: 100vh;
+      height: 100vh; } }
 
 .container.login .panel {
-  padding: 30px;
+  padding: 25px;
   background: white;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(98, 101, 105, 0.75); }
@@ -1471,11 +1477,12 @@ body.login {
 .container.login .panel-footer {
   margin-top: 30px;
   padding-top: 10px;
+  color: #626569;
   border-top: 2px solid #EAEBEC; }
   .container.login .panel-footer p {
     font-style: italic; }
     .container.login .panel-footer p a {
-      color: inherit;
+      color: #626569;
       text-decoration: none; }
       .container.login .panel-footer p a:hover {
         color: #005CBA;
@@ -1514,6 +1521,46 @@ form.login {
         max-width: 150px; } }
     form.login .btn:hover {
       background-color: #008659; }
+
+.footer.login {
+  position: fixed;
+  height: auto;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .footer.login {
+      height: 65px; } }
+  .footer.login .contain {
+    height: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .footer.login .copyright {
+    margin: 0;
+    padding: 15px 0;
+    color: #626569;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .footer.login .copyright {
+        float: right;
+        padding: 0; } }
+    .footer.login .copyright a {
+      color: #626569;
+      margin: 0 10px; }
+      @media (min-width: 768px) {
+        .footer.login .copyright a {
+          margin-right: 60px; } }
+  .footer.login .copy-text {
+    display: block;
+    margin: 25px auto 0; }
+    @media (min-width: 768px) {
+      .footer.login .copy-text {
+        display: inline-block; } }
 
 @media (max-width: 1100px) {
   .contain {
