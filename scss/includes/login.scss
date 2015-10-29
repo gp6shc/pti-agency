@@ -6,12 +6,16 @@ body {
 	&.login {
 		min-height: 100%;
 		height: 100%;
-		@include breakpoint(md) { //only show scrollbars on sm
+		overflow-x: hidden;
+		background: $brand-white;
+		@include breakpoint(md) {
 			min-height: 100vh;
 			height: 100vh;
+			background: darken($brand-white,25%);
 		}
-		background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/textured_paper.png'); //placeholder
-		overflow-x: hidden;
+		@include breakpoint(lg) {
+			background: darken($brand-white,45%);
+		}
 	}	
 }
 
@@ -35,10 +39,6 @@ body {
             height: auto;
             margin: auto;
 		}
-	}
-	
-	.panel-body {
-		//
 	}
 	
 	.panel-footer {
@@ -137,8 +137,9 @@ form.login {
 		a {
 			color: $brand-grey;
 			margin: 0 10px;
+			text-decoration: none;
 			@include breakpoint(md) {
-				margin-right: 60px;
+				margin-right: 40px;
 			}
 		}
 	}

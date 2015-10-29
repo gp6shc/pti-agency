@@ -18,6 +18,9 @@ $text-blue-dark: darken($primary-blue, 18%);
 
 // Media queries mixin
 @mixin breakpoint($point) { //media query breakpoint; for usage within layout stylesheet
+  @if $point == lg {
+    @media (min-width: 1400px) { @content; }
+  }
   @if $point == md {
     @media (min-width: 768px) { @content; }
   }
