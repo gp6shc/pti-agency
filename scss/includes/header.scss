@@ -157,7 +157,7 @@ nav {
 }
 
 .hasSubMenu {
-	padding: 13px 15px 16px;
+	padding: 13px 9px 16px 15px;
 	
 	&:after {
 		content: '';
@@ -166,6 +166,7 @@ nav {
 		width: 16px;
 		height: 16px;
 		display: inline-block;
+		margin-left: 3px;
 		background-position-y: 480%;
 	}
 	
@@ -306,7 +307,7 @@ nav {
 			right: 5px;
 			top: 3px;
 			padding: 10px;
-		}
+		}	
 	}
 	
 	.sub-menu {
