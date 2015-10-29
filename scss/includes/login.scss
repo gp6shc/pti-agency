@@ -2,16 +2,6 @@
 
 @import '../includes/bootstrap-grid';
 
-// MIXIN
-@mixin breakpoint($point) { //media query breakpoint; for usage within layout stylesheet
-  @if $point == md {
-    @media (min-width: 768px) { @content; }
-  }
-  @else if $point == sm {
-    @media (max-width: 768px) { @content; }
-  }
-}
-
 body {
 	&.login {
 		min-height: 100%;

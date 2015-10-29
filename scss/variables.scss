@@ -13,3 +13,15 @@ $font: "museo-sans", -apple-system, sans-serif, serif;					// 100,100italic,300,
 // text colors
 $text-blue-light: #7eedff;
 $text-blue-dark: darken($primary-blue, 18%);
+
+// Mixins
+
+// Media queries mixin
+@mixin breakpoint($point) { //media query breakpoint; for usage within layout stylesheet
+  @if $point == md {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == sm {
+    @media (max-width: 768px) { @content; }
+  }
+}
