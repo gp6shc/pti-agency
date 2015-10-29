@@ -14,7 +14,8 @@
 
 body {
 	&.login {
-		height: auto;
+		min-height: 100%;
+		height: 100%;
 		@include breakpoint(md) { //only show scrollbars on sm
 			min-height: 100vh;
 			height: 100vh;
@@ -25,7 +26,11 @@ body {
 }
 
 .container.login {
-
+	padding-top: 30px;
+	@include breakpoint(md) {
+		padding-top: 175px;
+	}
+	
 	.panel {
 		padding: 25px;
 		background: white;
@@ -108,15 +113,17 @@ form.login {
 }
 
 .footer.login {
-	position: fixed;
+	position: relative;
 	height: auto;
     background-color: white;
     bottom: 0;
     left: 0;
     right: 0;
-    margin-bottom: 0;
+    margin-top: 30px;
     @include breakpoint(md) {
+    	position: fixed;
     	height: 65px;
+    	margin-bottom: 0;
     }
     
     .contain {
