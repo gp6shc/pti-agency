@@ -1,4 +1,13 @@
+// Login page styles
+
 @import '../includes/bootstrap-grid';
+
+// MIXIN
+@mixin breakpoint($point) { //media query breakpoint; for usage within layout stylesheet
+  @if $point == sm {
+    @media (min-width: 768px) { @content; }
+  }
+}
 
 body {
 	&.login {
@@ -7,18 +16,83 @@ body {
 }
 
 .container.login {
+
 	.panel {
+		padding: 30px;
 		background: white;
         border-radius: 15px;
+        box-shadow: 0 0 15px rgba($brand-grey,0.75);
 	}
 	
 	.panel-heading {
-		//
+		img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+		}
 	}
 	
 	.panel-body {
 		//
 	}
+	
+	.panel-footer {
+        margin-top: 30px;
+        padding-top: 10px;
+        border-top: 2px solid $brand-white;
+        p {
+	        font-style: italic;
+	        a {
+	        	color: inherit;
+				text-decoration: none;
+				&:hover {
+		        	color: $primary-blue;
+		        	text-decoration: underline;
+				}
+			}
+		}
+	}
+
+}//container.login end
+
+//Login Form
+form.login {
+	margin-top: 60px;
+	
+	input { 
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		font-size: 1em;
+        padding: 10px;
+        background-color: $brand-white;
+        background-image: none;
+        border: 1px solid darken($brand-white,7%);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	    &:focus {
+            border-color: $primary-blue;
+			box-shadow: 0 1px 1px rgba(black, 0.075) inset, 0 0 8px rgba($primary-blue, 0.6);
+			outline: 0 none;
+		}
+	}
+	
+	.btn {
+		background-color: $brand-green;
+		color: white;
+		border: none;
+		text-transform: uppercase;
+		transition: background-color ease-in-out .3s;
+		@include breakpoint(sm) {
+			max-width: 150px;
+		}
+		&:hover {
+			background-color: darken($brand-green,7%);
+		}
+	}
+	
 }
-
-

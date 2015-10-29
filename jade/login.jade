@@ -8,16 +8,19 @@ html
 					.panel
 						.panel-heading
 							.row-fluid 
-								img.img-responsive(src="https://peoplestrustinsurance.com/Sitefinity/WebsiteTemplates/PTI/App_Themes/PTI/Images/PTI/pti-logo-color.svg")/-placeholder
+								img(src="https://peoplestrustinsurance.com/Sitefinity/WebsiteTemplates/PTI/App_Themes/PTI/Images/PTI/pti-logo-color.svg")/-placeholder
 						.panel-body
-							form.form-signin
-								fieldset
-									label.panel-login
-									input#username.form-control(type="text", placeholder="Username")
+							form.login
+								.group
+									input#email.form-control(type="email", placeholder="Email Address")
 									input#password.form-control(type="password", placeholder="Password")
-									br
-									br
-									input#login.btn.btn-lg.btn-success.btn-block(type="submit", value="Login »")
+									input#login.btn(type="submit", value="Login")
+						.panel-footer
+							p
+								a#js-forgot-pass.forgot-pass(href="#")| Forgot Password?
+							p Call Agency Services at 
+								a(href="tel:#")| 1-800-555-5555
+						
 									
 										
 				
