@@ -1456,16 +1456,11 @@ footer {
 body.login {
   min-height: 100%;
   height: 100%;
-  overflow-x: hidden;
-  background: #EAEBEC; }
+  overflow-x: hidden; }
   @media (min-width: 768px) {
     body.login {
       min-height: 100vh;
-      height: 100vh;
-      background: #a7abaf; } }
-  @media (min-width: 1400px) {
-    body.login {
-      background: #72787e; } }
+      height: 100vh; } }
 
 .container.login {
   padding-top: 30px; }
@@ -1566,6 +1561,9 @@ form.login {
       @media (min-width: 768px) {
         .footer.login .copyright a {
           margin-right: 40px; } }
+      .footer.login .copyright a:hover {
+        color: #005CBA;
+        text-decoration: underline; }
   .footer.login .copy-text {
     display: block;
     margin: 25px auto 0; }
