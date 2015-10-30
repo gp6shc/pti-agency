@@ -8,9 +8,9 @@ var body=document.getElementsByTagName("body");
 
   if (body[0].getAttribute("id")=="login-bg") {
       var images = [
-      "../bg/bg1.png",
-      "../bg/bg2.png", 
-      "../bg/bg3.png"
+      "bg/bg1.png",
+      "bg/bg2.png", 
+      "bg/bg3.png"
       ];
       var imgCount = images.length;
       var randNumber=Math.floor((Math.random() * imgCount) + 1);
