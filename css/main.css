@@ -383,6 +383,28 @@ main {
   padding-right: 40px;
   padding-left: 40px; }
 
+header {
+  width: 100%;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
+          transition: transform 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99); }
+  header.small {
+    -webkit-transform: translateY(-91px);
+        -ms-transform: translateY(-91px);
+            transform: translateY(-91px); }
+    header.small svg {
+      -webkit-transform: scale(0.6) translateY(10px);
+          -ms-transform: scale(0.6) translateY(10px);
+              transform: scale(0.6) translateY(10px); }
+  header svg {
+    -webkit-transition: -webkit-transform 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
+            transition: transform 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left; }
+
 .top-bar {
   height: 52px;
   background-color: #323132;
@@ -438,7 +460,7 @@ main {
     outline: none;
     border-color: #009060; }
 
-.submit {
+.submit-search {
   padding: 4px 7px;
   margin-left: -4px;
   background-color: #00AA71;
@@ -452,12 +474,12 @@ main {
   -webkit-transition: border-color 200ms, background-color 200ms;
           transition: border-color 200ms, background-color 200ms;
   color: transparent; }
-  .submit:hover {
+  .submit-search:hover {
     border-color: #009060;
     background-color: #009060;
     -webkit-animation: pulseGreen 1s infinite;
             animation: pulseGreen 1s infinite; }
-  .submit:focus {
+  .submit-search:focus {
     border-color: #009060;
     background-color: #009060;
     outline: none;
@@ -479,11 +501,6 @@ main {
   50% {
     border-color: #00AA71;
     background-color: #00AA71; } }
-
-header {
-  width: 100%;
-  position: fixed;
-  top: 0; }
 
 nav {
   height: 90px;
@@ -603,17 +620,30 @@ nav {
   display: none; }
 
 @media (max-width: 700px) {
+  header.small .menu-contain {
+    -webkit-transform: translate(100%, 91px);
+        -ms-transform: translate(100%, 91px);
+            transform: translate(100%, 91px); }
+    header.small .menu-contain.open {
+      -webkit-transform: translate(0, 91px);
+          -ms-transform: translate(0, 91px);
+              transform: translate(0, 91px); }
+  header.small .hamburger {
+    -webkit-transform: translateY(18px);
+        -ms-transform: translateY(18px);
+            transform: translateY(18px); }
   .menu-contain {
     position: absolute;
     width: 80%;
     top: -52px;
     right: 0;
+    height: 100vh;
     background: #323132;
     overflow: visible;
+    z-index: 1;
     -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
             transform: translateX(100%);
-    height: 100vh;
     -webkit-transition: -webkit-transform 400ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
             transition: transform 400ms cubic-bezier(0.4, 0.01, 0.165, 0.99); }
     .menu-contain::after {
@@ -720,13 +750,46 @@ nav {
     border-radius: 3px;
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-transition: background-color 300ms 350ms;
-            transition: background-color 300ms 350ms; }
+    -webkit-transition: background-color 300ms 350ms, -webkit-transform 300ms linear;
+            transition: background-color 300ms 350ms, transform 300ms linear; }
     .hamburger:hover {
       background-color: #0780E2;
       cursor: pointer;
       -webkit-transition-delay: 0ms;
               transition-delay: 0ms; } }
+
+@media (max-width: 600px) {
+  .top-bar .contain {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .login-status {
+    width: 90px; } }
+
+@media (max-width: 520px) {
+  .top-bar {
+    font-size: 0.8em; }
+    .top-bar span + span {
+      margin: 0; }
+  .login-status {
+    width: 80px; }
+  .search-form form {
+    position: relative; }
+  .search {
+    position: absolute;
+    width: 0;
+    right: 94%;
+    -webkit-transition: width 300ms 1s;
+            transition: width 300ms 1s;
+    z-index: 0; }
+    .search:focus {
+      width: 50vw;
+      -webkit-transition-delay: 0s;
+              transition-delay: 0s; }
+  .submit-search {
+    position: relative;
+    z-index: 1; } }
 
 @media (max-width: 450px) {
   .menu-contain {
