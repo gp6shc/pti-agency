@@ -3,7 +3,41 @@ html
 	include includes/head.jade
 	body
 		include includes/header.jade
-		main.contain
+		main
+			section
+				.gallery
+					.gallery-cell
+						img(
+							src="http://placehold.it/1100x400/a3137f/ffffff?text=Desktop+(default)"
+							srcset="http://placehold.it/3300x1200/a3137f/ffffff?text=Desktop@3x 3300w, \
+											http://placehold.it/2200x800/a3137f/ffffff?text=Desktop@2x 2200w, \
+											http://placehold.it/2200x800/a3137f/ffffff?text=Desktop@1x 1100w, \
+											http://placehold.it/550x200/a3137f/ffffff?text=Mobile 550w"
+						)
+					.gallery-cell
+						img(
+							src="http://placehold.it/1100x400/648c55/ffffff?text=Desktop+(default)"
+							srcset="http://placehold.it/3300x1200/648c55/ffffff?text=Desktop@3x 3300w, \
+											http://placehold.it/2200x800/648c55/ffffff?text=Desktop@2x 2200w, \
+											http://placehold.it/2200x800/648c55/ffffff?text=Desktop@1x 1100w, \
+											http://placehold.it/550x200/648c55/ffffff?text=Mobile 550w"
+						)
+					.gallery-cell
+						img(
+							src="http://placehold.it/1100x400?text=Desktop+(default)"
+							srcset="http://placehold.it/3300x1200/ddf2fa?text=Desktop@3x 3300w, \
+											http://placehold.it/2200x800/ddf2fa?text=Desktop@2x 2200w, \
+											http://placehold.it/2200x800/ddf2fa?text=Desktop@1x 1100w, \
+											http://placehold.it/550x200/ddf2fa?text=Mobile 550w"
+						)
+					.gallery-cell
+						img(
+							src="http://placehold.it/1100x400/505ab5/ffffff?text=Desktop+(default)"
+							srcset="http://placehold.it/3300x1200/505ab5/ffffff?text=Desktop@3x 3300w, \
+											http://placehold.it/2200x800/505ab5/ffffff?text=Desktop@2x 2200w, \
+											http://placehold.it/2200x800/505ab5/ffffff?text=Desktop@1x 1100w, \
+											http://placehold.it/550x200/505ab5/ffffff?text=Mobile 550w"
+						)
 			h1 Hello World
 			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		include includes/footer.jade
