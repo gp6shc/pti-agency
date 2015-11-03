@@ -4,40 +4,84 @@ html
 	body
 		include includes/header.jade
 		main
-			section
+			section.slider
 				.gallery
 					.gallery-cell
 						img(
-							src="http://placehold.it/1100x400/a3137f/ffffff?text=Desktop+(default)"
-							srcset="http://placehold.it/3300x1200/a3137f/ffffff?text=Desktop@3x 3300w, \
-											http://placehold.it/2200x800/a3137f/ffffff?text=Desktop@2x 2200w, \
-											http://placehold.it/2200x800/a3137f/ffffff?text=Desktop@1x 1100w, \
-											http://placehold.it/550x200/a3137f/ffffff?text=Mobile 550w"
+							src="http://placehold.it/1100x619/a3137f/ffffff?text=Desktop+(default)"
+							srcset="http://placehold.it/3300x1857/a3137f/ffffff?text=Desktop@3x 3300w, \
+											http://placehold.it/2200x1238/a3137f/ffffff?text=Desktop@2x 2200w, \
+											http://placehold.it/1100x619/a3137f/ffffff?text=Desktop@1x 1100w, \
+											http://placehold.it/550x310/a3137f/ffffff?text=Mobile 550w"
 						)
 					.gallery-cell
 						img(
-							src="http://placehold.it/1100x400/648c55/ffffff?text=Desktop+(default)"
-							srcset="http://placehold.it/3300x1200/648c55/ffffff?text=Desktop@3x 3300w, \
-											http://placehold.it/2200x800/648c55/ffffff?text=Desktop@2x 2200w, \
-											http://placehold.it/2200x800/648c55/ffffff?text=Desktop@1x 1100w, \
-											http://placehold.it/550x200/648c55/ffffff?text=Mobile 550w"
+							src="http://placehold.it/1100x619/648c55/ffffff?text=Desktop+(default)"
+							srcset="http://placehold.it/3300x1857/648c55/ffffff?text=Desktop@3x 3300w, \
+											http://placehold.it/2200x1238/648c55/ffffff?text=Desktop@2x 2200w, \
+											http://placehold.it/1100x619/648c55/ffffff?text=Desktop@1x 1100w, \
+											http://placehold.it/550x310/648c55/ffffff?text=Mobile 550w"
 						)
 					.gallery-cell
 						img(
-							src="http://placehold.it/1100x400?text=Desktop+(default)"
-							srcset="http://placehold.it/3300x1200/ddf2fa?text=Desktop@3x 3300w, \
-											http://placehold.it/2200x800/ddf2fa?text=Desktop@2x 2200w, \
-											http://placehold.it/2200x800/ddf2fa?text=Desktop@1x 1100w, \
-											http://placehold.it/550x200/ddf2fa?text=Mobile 550w"
+							src="http://placehold.it/1100x619?text=Desktop+(default)"
+							srcset="http://placehold.it/3300x1857/ddf2fa?text=Desktop@3x 3300w, \
+											http://placehold.it/2200x1238/ddf2fa?text=Desktop@2x 2200w, \
+											http://placehold.it/1100x619/ddf2fa?text=Desktop@1x 1100w, \
+											http://placehold.it/550x310/ddf2fa?text=Mobile 550w"
 						)
 					.gallery-cell
 						img(
-							src="http://placehold.it/1100x400/505ab5/ffffff?text=Desktop+(default)"
-							srcset="http://placehold.it/3300x1200/505ab5/ffffff?text=Desktop@3x 3300w, \
-											http://placehold.it/2200x800/505ab5/ffffff?text=Desktop@2x 2200w, \
-											http://placehold.it/2200x800/505ab5/ffffff?text=Desktop@1x 1100w, \
-											http://placehold.it/550x200/505ab5/ffffff?text=Mobile 550w"
+							src="http://placehold.it/1100x619/505ab5/ffffff?text=Desktop+(default)"
+							srcset="http://placehold.it/3300x1857/505ab5/ffffff?text=Desktop@3x 3300w, \
+											http://placehold.it/2200x1238/505ab5/ffffff?text=Desktop@2x 2200w, \
+											http://placehold.it/1100x619/505ab5/ffffff?text=Desktop@1x 1100w, \
+											http://placehold.it/550x310/505ab5/ffffff?text=Mobile 550w"
 						)
-			h1 Hello World
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				.controls
+					button.flickity-prev-next-button.next#js-prev(type="button")
+						svg(viewBox="0 0 100 100")
+							path(
+								d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+							)
+					button.flickity-prev-next-button.play-pause#js-pause(type="button")
+						svg(viewBox="0 0 36 36")
+							defs
+								path#yt(
+									d="M 11 10 L 17 10 L 17 26 L 11 26 M 20 10 L 26 10 L 26 26 L 20 26"
+								)
+									animate#animation(
+										begin="indefinite"
+										attributeType="XML"
+										attributeName="d"
+										fill="freeze"
+										from="M11,10 L17,10 17,26 11,26 M20,10 L26,10 26,26 20,26"
+										to="M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28"
+										dur="0.1s"
+										keySplines=".4 0 1 1"
+										repeatCount="1"
+									)
+							use(xlink:href="#yt")
+					button.flickity-prev-next-button.next#js-next(type="button")
+						svg(viewBox="0 0 100 100")
+							path(
+								d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+								transform="translate(100, 100) rotate(180)"
+							)
+				.bookmark
+					h1 How can we help you?
+					ul
+						li
+							a(href="#") Forms
+						li
+							a(href="#") Underwriting
+						li
+							a(href="#") Billing
+						li
+							a(href="#") Claims
+						li
+							a(href="#") Marketing
+			section.contain					
+				h1 Hello World
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		include includes/footer.jade
