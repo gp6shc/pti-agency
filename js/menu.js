@@ -62,7 +62,7 @@ function refreshHeader() {
 	
 	if (currentScrollPos > lastScrollPos) {
 		pageHeader.classList.add('small');
-	}else if(currentScrollPos < (lastScrollPos - 15)) {
+	}else if(currentScrollPos < (lastScrollPos - 42)) {
 		pageHeader.classList.remove('small');
 	}
 	lastScrollPos = currentScrollPos;	

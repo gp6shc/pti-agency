@@ -3,7 +3,7 @@ var flkty = new Flickity( '.gallery', {
   cellAlign: 'center',
   contain: true,
   wrapAround: true,
-  autoPlay: true,
+  autoPlay: 5000,
   pageDots: false,
   prevNextButtons: false
 });
@@ -25,6 +25,7 @@ var isPlaying = true;
 
 
 pauseButton.addEventListener('click', function() {
+	this.classList.toggle('paused');
 	if (isPlaying) {
 		flkty.deactivatePlayer();
 		isPlaying = false;
