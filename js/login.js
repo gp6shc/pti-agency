@@ -10,7 +10,9 @@ var body=document.getElementsByTagName("body");
       var images = [ //create array of images
       "bg/bg1.png",
       "bg/bg2.png", 
-      "bg/bg3.png"
+      "bg/bg3.png",
+      "bg/bg4.png",
+      "bg/bg5.png"
       ];
       var imgCount = images.length;
       var randNumber = Math.floor((Math.random() * imgCount) + 1);
@@ -27,10 +29,10 @@ function showViewportSize() {
   var md = imgURL.replace(/^(.*)\.png$/, "$1_md.png");
   var sm = imgURL.replace(/^(.*)\.png$/, "$1_sm.png");
 
-  if (vWidth >= 1400) { //lg
+  if (vWidth >= 1600) { //lg
     image[0].style.backgroundImage = 'url(' + lg + ')' ;
 		  
-  } else if (vWidth < 1400 && vWidth >= 768) { //md
+  } else if (vWidth < 1600 && vWidth >= 768) { //md
 	image[0].style.backgroundImage = 'url(' + md + ')' ;
 		  
   } else if (vWidth < 768) { //sm

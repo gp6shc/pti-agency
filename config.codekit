@@ -6,100 +6,166 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 33145,
+		"initialSize": 4.79749e+06,
 		"inputAbbreviatedPath": "\/bg\/bg1_lg.png",
 		"outputAbbreviatedPath": "\/bg\/bg1_lg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bg\/bg1_md.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 33145,
+		"initialSize": 1.07564e+06,
 		"inputAbbreviatedPath": "\/bg\/bg1_md.png",
 		"outputAbbreviatedPath": "\/bg\/bg1_md.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bg\/bg1_sm.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 33145,
+		"initialSize": 232976,
 		"inputAbbreviatedPath": "\/bg\/bg1_sm.png",
 		"outputAbbreviatedPath": "\/bg\/bg1_sm.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bg\/bg2_lg.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 18790,
+		"initialSize": 7.07601e+06,
 		"inputAbbreviatedPath": "\/bg\/bg2_lg.png",
 		"outputAbbreviatedPath": "\/bg\/bg2_lg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bg\/bg2_md.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 18790,
+		"initialSize": 1.00386e+06,
 		"inputAbbreviatedPath": "\/bg\/bg2_md.png",
 		"outputAbbreviatedPath": "\/bg\/bg2_md.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bg\/bg2_sm.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 18790,
+		"initialSize": 246865,
 		"inputAbbreviatedPath": "\/bg\/bg2_sm.png",
 		"outputAbbreviatedPath": "\/bg\/bg2_sm.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bg\/bg3_lg.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 47433,
+		"initialSize": 2.89066e+06,
 		"inputAbbreviatedPath": "\/bg\/bg3_lg.png",
 		"outputAbbreviatedPath": "\/bg\/bg3_lg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bg\/bg3_md.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 47433,
+		"initialSize": 1.14265e+06,
 		"inputAbbreviatedPath": "\/bg\/bg3_md.png",
 		"outputAbbreviatedPath": "\/bg\/bg3_md.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/bg\/bg3_sm.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 47433,
+		"initialSize": 297190,
 		"inputAbbreviatedPath": "\/bg\/bg3_sm.png",
 		"outputAbbreviatedPath": "\/bg\/bg3_sm.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/bg\/bg4_lg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.15321e+06,
+		"inputAbbreviatedPath": "\/bg\/bg4_lg.png",
+		"outputAbbreviatedPath": "\/bg\/bg4_lg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/bg\/bg4_md.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 739671,
+		"inputAbbreviatedPath": "\/bg\/bg4_md.png",
+		"outputAbbreviatedPath": "\/bg\/bg4_md.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/bg\/bg4_sm.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 195376,
+		"inputAbbreviatedPath": "\/bg\/bg4_sm.png",
+		"outputAbbreviatedPath": "\/bg\/bg4_sm.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/bg\/bg5_lg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.89264e+06,
+		"inputAbbreviatedPath": "\/bg\/bg5_lg.jpg",
+		"outputAbbreviatedPath": "\/bg\/bg5_lg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/bg\/bg5_md.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 780965,
+		"inputAbbreviatedPath": "\/bg\/bg5_md.png",
+		"outputAbbreviatedPath": "\/bg\/bg5_md.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/bg\/bg5_sm.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 213538,
+		"inputAbbreviatedPath": "\/bg\/bg5_sm.png",
+		"outputAbbreviatedPath": "\/bg\/bg5_sm.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/css\/main.css": {
 		"fileType": 16,
@@ -112,7 +178,7 @@
 		},
 	"\/css\/mixins.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/mixins.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -170,7 +236,7 @@
 		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/jade\/login.jade": {
 		"compileDebug": 1,
@@ -181,7 +247,7 @@
 		"outputAbbreviatedPath": "\/login.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/jade\/news.jade": {
 		"compileDebug": 1,
@@ -213,7 +279,7 @@
 		"outputAbbreviatedPath": "\/js\/login.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/login.min.js": {
@@ -229,7 +295,7 @@
 		},
 	"\/js\/menu.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/menu.js",
 		"outputAbbreviatedPath": "\/js\/min\/menu-min.js",
@@ -243,15 +309,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/site.js",
-		"outputAbbreviatedPath": "\/js\/site.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/site-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 2,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/site.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/site.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/site.min-min.js",
@@ -363,9 +429,9 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/scss\/normalize.scss": {
 		"createSourceMap": 0,
@@ -404,20 +470,6 @@
 	],
 "lastSavedByUser": "Brian",
 "manualImportLinks": {
-	"\/js\/site.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/fastclick.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/menu.js",
-			"position": 1,
-			"type": 1
-			}
-		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",

@@ -8,9 +8,8 @@ body {
 		height: 100%;
 		overflow-x: hidden;
 		background: $brand-grey;
-		//background-position: 0 0;
-		//background-repeat: no-repeat;
-		//background-size: cover;
+		background-repeat: no-repeat;
+		background-size: cover;
 		@include breakpoint(md) {
 			min-height: 100vh;
 			height: 100vh;
