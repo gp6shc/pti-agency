@@ -1335,6 +1335,8 @@ p.right {
     width: 100%;
     right: 0;
     top: calc(100% - 17px); }
+    .quick-links:before {
+      display: none; }
     .quick-links h1 {
       margin: 0.5em 0 1em; }
 
