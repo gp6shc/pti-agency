@@ -464,3 +464,12 @@ nav {
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.hasSubMenu {
+		padding: 13px 6px 16px 9px;
+	}
+	.menu > li > a {
+		padding: 13px 9px 16px;
+	}
+}

@@ -6,18 +6,20 @@ footer {
 	
 	h1 {
 		text-align: center;
-		margin: 0 0 40px  ;
+		margin: 0 0 0.5em;
 		font-size: 3.5em;
 	}
 }
 
 .connections {
 	display: flex;
-	margin-bottom: 50px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 -2% 50px;
 }
 
 .card {
-	width: 25%;
+	margin: 0 2%;
 	
 	ul {
 		padding: 0;
@@ -36,6 +38,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	
 	img {
 		margin: 0 15px;
@@ -53,14 +56,6 @@ $facebook: #48649f;
 $gplus: #dd4b39;
 $twitter: #55acee;
 $youtube: #cc181e;
-
-@function makelongshadow($color) {
-  $val: 0px 0px $color;
-  @for $i from 1 through 25 {
-    $val: #{$val}, #{$i}px #{$i}px #{$color};
-  }
-  @return $val;
-}
 
 .social-icons a {
 	width: 36px;
@@ -100,7 +95,7 @@ $youtube: #cc181e;
 
 .legal {
 	background-color: $brand-black;
-	color: $brand-white;
+	color: darken($brand-white, 20%);
 	font-size: 0.75em;
 	
 	.contain {
@@ -110,24 +105,57 @@ $youtube: #cc181e;
 	
 	p {
 		padding: 14px 0;
+		line-height: 1.5;
 	}
 }
 
 p.left {
 	margin: 0;
+	margin-right: 1%
 }
 p.right {
 	margin: 0;
+	margin-left: 1%;
 	text-align: right;
 	
 	a {
 		display: inline-block;
-		color: $brand-white;
+		color: inherit;
 		
 		+ a {
 			padding-left: 8px;		
 			margin-left: 8px;
-			border-left: 1px solid white;
+			border-left: 1px solid currentcolor;
 		}
+	}
+}
+
+@media (max-width: 768px) {
+	.card {
+		flex: 1 1 45%;
+	}
+}
+
+@media (max-width: 620px) {
+	.card {	
+		flex: 1 1 auto;
+	}
+}
+
+@media (max-width: 530px) {
+	footer h1 {
+		font-size: 2.8em;
+	}
+	
+	.legal .contain {
+		display: block;
+		padding: 10px 0;
+		line-height: 1.8;
+	}
+	
+	p.left, p.right {
+		margin: 0;
+		padding: 0;
+		text-align: center;
 	}
 }

@@ -55,7 +55,7 @@ var lastScrollPos = 0;
 function refreshHeader() {
 	var currentScrollPos = window.pageYOffset;
 	
-	if (currentScrollPos < 10) {
+	if (currentScrollPos < 55) {
 		pageHeader.classList.remove('small');
 		return;	
 	}

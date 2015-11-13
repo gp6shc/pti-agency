@@ -116,6 +116,12 @@ main {
 	}
 }
 
+@media (max-width: 700px) {
+	body {
+		font-size: 0.9em;
+	}
+}
+
 // Imports corresponding to the equivalent .jade partial
 @import 'includes/header';
 @import 'includes/footer';
