@@ -2,6 +2,7 @@ var flkty = new Flickity( '.gallery', {
   // options
   cellAlign: 'center',
   contain: true,
+  setGallerySize: false,
   wrapAround: true,
   autoPlay: 5000,
   pageDots: false,
