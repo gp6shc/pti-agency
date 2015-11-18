@@ -1,0 +1,153 @@
+header.interior {
+	background-color: $secondary-blue;
+	border-top: 30px solid $primary-blue;
+	color: white;
+	font-size: 1.5em;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	
+	h1 {
+		margin: 0 0 0.1em;
+		max-width: calc(100% - 270px);
+	}
+	
+	span {
+		font-style: italic;
+		font-size: 0.8em;
+		display: block;
+		max-width: calc(100% - 270px);
+	}
+}
+
+.article-wrap {
+	background-color: $brand-white;
+	padding-bottom: 50px;
+	
+	.contain {
+		display: flex;
+	}
+	
+	article {
+		//flex: 1 1 calc(100% - 300px);
+	}
+	nav {
+		flex: 1 0 250px;
+    background-color: white;
+    padding: 2em 1.5em;
+    position: relative;
+    z-index: 1;
+    margin: -80px 0 -50px 4%;
+		
+		&::before {
+			content: '';
+			position: absolute;
+			top: -17px;
+			left: 0;
+			width: 100%;
+			height: 17px;
+			background-color: $brand-green;
+			border-top-left-radius: 17px;
+			border-top-right-radius: 17px;
+		}
+		
+		h3 {
+			font-size: 1.3em;
+			color: $brand-green;
+			margin: 0 0 0.5em;
+		}
+		
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		
+		a {
+			color: $brand-black;
+			display: block;
+			margin-left: -0.4em;
+			margin-right: -1.5em;
+			padding: 0.3em 1.5em 0.3em 0.4em;
+			text-decoration: none;
+			transition: none;
+			
+			&::after {
+				margin-left: 0.6em;
+			}
+			
+			&:hover, &.active {
+				color: white;
+				background-color: $brand-green;
+	
+				&::after {
+					background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M100,50 C100,59.0711806 97.7647569,67.437066 93.2942708,75.0976562 C88.8237847,82.7582465 82.7582465,88.8237847 75.0976562,93.2942708 C67.437066,97.7647569 59.0711806,100 50,100 C40.9288194,100 32.562934,97.7647569 24.9023438,93.2942708 C17.2417535,88.8237847 11.1762153,82.7582465 6.70572917,75.0976562 C2.23524306,67.437066 0,59.0711806 0,50 C0,40.9288194 2.23524306,32.562934 6.70572917,24.9023438 C11.1762153,17.2417535 17.2417535,11.1762153 24.9023438,6.70572917 C32.562934,2.23524306 40.9288194,0 50,0 C59.0711806,0 67.437066,2.23524306 75.0976562,6.70572917 C82.7582465,11.1762153 88.8237847,17.2417535 93.2942708,24.9023438 C97.7647569,32.562934 100,40.9288194 100,50 L100,50 Z" fill="#FFFFFF"></path><path d="M84.0323422,50.2232209 C84.0323422,49.0461141 83.6399733,48.0651918 82.8552355,47.280454 L76.9043069,41.3295255 L53.2313825,17.6566011 C52.4466447,16.8718633 51.4657224,16.4794943 50.2886157,16.4794943 C49.1115089,16.4794943 48.1305867,16.8718633 47.3458488,17.6566011 L41.3949203,23.6075296 C40.6101825,24.3922674 40.2178136,25.3731897 40.2178136,26.5502964 C40.2178136,27.7274032 40.6101825,28.7083255 41.3949203,29.4930633 L53.7545411,41.852684 L20.926342,41.852684 C19.7928318,41.852684 18.8119095,42.2668512 17.9835752,43.0951856 C17.1552408,43.92352 16.7410736,44.9044423 16.7410736,46.0379525 L16.7410736,54.4084893 C16.7410736,55.5419995 17.1552408,56.5229217 17.9835752,57.3512561 C18.8119095,58.1795905 19.7928318,58.5937577 20.926342,58.5937577 L53.7545411,58.5937577 L41.3949203,70.9533784 C40.5665859,71.7817128 40.1524188,72.7626351 40.1524188,73.8961453 C40.1524188,75.0296555 40.5665859,76.0105777 41.3949203,76.8389121 L47.3458488,82.7898406 C48.1305867,83.5745785 49.1115089,83.9669474 50.2886157,83.9669474 C51.4657224,83.9669474 52.4466447,83.5745785 53.2313825,82.7898406 L76.9043069,59.1169162 L82.8552355,53.1659877 C83.6399733,52.3812499 84.0323422,51.4003276 84.0323422,50.2232209 L84.0323422,50.2232209 Z" fill="#00AA71"></path></svg>');
+				}			
+			}
+		}
+		
+		ul + h3 {
+			margin-top: 1em;
+			padding-top: 1em;
+			border-top: 1px solid $brand-white;
+		}
+	}
+}
+
+article {
+	padding: 1em 0;
+}
+
+.related {
+	background-color: $secondary-blue;
+	color: white;
+	text-align: center;
+	padding: 20px 0 50px;
+	
+	h2 {
+		font-size: 2.2em;
+		margin-top: 0;
+	}
+}
+
+.related-content {
+	display: flex;
+	justify-content: space-between;
+	
+	a {
+		display: block;
+		color: white;
+		text-decoration: none;
+		flex: 0 1 23%;
+		position: relative;
+		overflow: hidden;
+		
+		&::after {
+			content: '';
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: rgba($secondary-blue, 0.6);
+			position: absolute;
+			top: -10%;
+			left: 50%;
+			transform: translateX(-50%) scale(0);
+			transform-origin: center;
+			transition: transform cubic-bezier(0.4, 0.01, 0.165, 0.99) 500ms;
+		}
+		
+		&:hover {
+			text-decoration: underline;
+			
+			&::after {
+				transform: translateX(-50%) scale(1.5);
+			}
+		}
+	}
+	
+	h4 {
+		font-weight: 300;
+		font-size: 1.1em;
+		z-index: 1;
+		position: relative;
+	}
+}

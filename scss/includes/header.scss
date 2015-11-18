@@ -1,4 +1,4 @@
-header {
+.site-header {
 	width: 100%;
 	min-width: 320px;
 	position: fixed;
@@ -119,7 +119,7 @@ header {
 	50% 		 {border-color: $brand-green;background-color: $brand-green;}	
 }
 
-nav {
+.site-nav {
 	height: 90px;
 	color: white;
 	background-color: $primary-blue;

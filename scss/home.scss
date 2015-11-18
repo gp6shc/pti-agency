@@ -4,15 +4,6 @@
 	position: relative;
 	padding-bottom: 619px;
 	height: 0;
-	
-	&::before {
-		content: '';
-		background-color: $primary-blue;
-		position: absolute;
-		top:-200px;
-		height: 200px;
-		width: 100%;
-	}
 }
 .gallery {
 	position: absolute;
