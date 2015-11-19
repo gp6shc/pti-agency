@@ -1,21 +1,29 @@
 header.interior {
-	background-color: $secondary-blue;
+	background-color: $brand-white;
 	border-top: 30px solid $primary-blue;
-	color: white;
+	color: $secondary-blue;
 	font-size: 1.5em;
 	padding-top: 20px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	
 	h1 {
 		margin: 0 0 0.1em;
-		max-width: calc(100% - 270px);
 	}
 	
 	span {
 		font-style: italic;
 		font-size: 0.8em;
 		display: block;
-		max-width: calc(100% - 270px);
+	}
+	
+	&.sidebar {
+		background-color: $secondary-blue;
+		color: white;
+		padding-bottom: 50px;
+		
+		h1, span {
+			max-width: calc(100% - 270px);		
+		}
 	}
 }
 

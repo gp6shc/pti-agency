@@ -58,7 +58,8 @@ p {
 
 ul {
 	margin: 1em 0;
-	padding-left: 1.5em;
+	padding-left: 0.7em;
+	list-style-position: inside;
 }
 li {
 	line-height: 1.5;
@@ -67,6 +68,18 @@ li {
 img {
 	max-width: 100%;
 	height: auto;
+	
+	&.left {
+		float: left;
+		margin: 1em 1em 1em 0;
+	}
+	&.right {
+		float: right;
+		margin: 1em 0 1em 1em;
+	}
+	&.top {
+		margin-top: 0;
+	}
 }
 
 // Major classes
@@ -162,7 +175,7 @@ img {
 }
 
 @media (max-width: 500px) {
-	p {
+	p, ul {
 		font-size: 1.125em;
 	}
 	.contain {
