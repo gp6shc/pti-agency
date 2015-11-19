@@ -473,8 +473,8 @@ main {
     content: '';
     background-color: #005CBA;
     position: absolute;
-    top: -100px;
-    height: 100px;
+    top: -500px;
+    height: 500px;
     width: 100%; }
 
 h1, h2, h3 {
@@ -486,6 +486,13 @@ p {
   margin: 0; }
   p + p {
     margin-top: 1em; }
+
+ul {
+  margin: 1em 0;
+  padding-left: 1.5em; }
+
+li {
+  line-height: 1.5; }
 
 img {
   max-width: 100%;
@@ -517,9 +524,11 @@ img {
   width: 50%;
   float: left; }
   .indentation.left {
-    border-radius: 0 40px 0 0/0 25px 0 0; }
+    border-radius: 0 40px 0 0/0 25px 0 0;
+    box-shadow: 0px -3px 6px -2px rgba(0, 0, 0, 0.2); }
   .indentation.right {
-    border-radius: 40px 0 0 0/25px 0 0 0; }
+    border-radius: 40px 0 0 0/25px 0 0 0;
+    box-shadow: 0px -3px 6px -2px rgba(0, 0, 0, 0.2); }
 
 .read-more {
   color: #00AA71;
@@ -550,6 +559,13 @@ img {
 @media (max-width: 700px) {
   body {
     font-size: 0.9em; } }
+@media (max-width: 500px) {
+  p {
+    font-size: 1.125em; }
+
+  .contain {
+    padding-left: 4.5%;
+    padding-right: 4.5%; } }
 .site-header {
   width: 100%;
   min-width: 320px;
@@ -672,7 +688,7 @@ img {
     transition: background-color 200ms; }
     .menu > li > a {
       display: block;
-      padding: 13px 15px 16px; }
+      padding: 13px 15px 11px; }
     .menu > li:hover {
       background-color: #046ece;
       cursor: pointer; }
@@ -683,7 +699,7 @@ img {
     text-decoration: none; }
 
 .hasSubMenu {
-  padding: 13px 9px 16px 15px; }
+  padding: 13px 9px 11px 15px; }
   .hasSubMenu:after {
     content: '';
     background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z" fill="#fff"/></svg>');
@@ -722,7 +738,7 @@ img {
     list-style: none; }
     .sub-menu ul li {
       padding: 0;
-      font-weight: 100; }
+      font-weight: 300; }
     .sub-menu ul + ul {
       margin-left: 14px; }
   .sub-menu a {
@@ -1468,6 +1484,16 @@ header.interior {
       padding-top: 1em;
       border-top: 1px solid #EAEBEC; }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 160px;
+  margin-bottom: 1em;
+  transition: top 200ms linear; }
+
+.site-header.small + main .sticky {
+  top: 70px; }
+
 article {
   padding: 1em 0; }
 
@@ -1482,32 +1508,66 @@ article {
 
 .related-content {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
   .related-content a {
     display: block;
     color: white;
     text-decoration: none;
-    flex: 0 1 23%;
-    position: relative;
-    overflow: hidden; }
-    .related-content a::after {
-      content: '';
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background-color: rgba(7, 128, 226, 0.6);
-      position: absolute;
-      top: -10%;
-      left: 50%;
-      transform: translateX(-50%) scale(0);
-      transform-origin: center;
-      transition: transform cubic-bezier(0.4, 0.01, 0.165, 0.99) 500ms; }
+    flex: 0 1 23%; }
     .related-content a:hover {
       text-decoration: underline; }
-      .related-content a:hover::after {
-        transform: translateX(-50%) scale(1.5); }
+      .related-content a:hover .overlay::after {
+        transform: translate(-50%, -50%) scale(2); }
   .related-content h4 {
     font-weight: 300;
     font-size: 1.1em;
     z-index: 1;
     position: relative; }
+
+.overlay {
+  position: relative;
+  overflow: hidden; }
+  .overlay::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(7, 128, 226, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform cubic-bezier(0.4, 0.01, 0.165, 0.99) 500ms; }
+
+@media (max-width: 680px) {
+  header.interior h1 {
+    max-width: calc(100% - 200px); }
+
+  .article-wrap nav {
+    flex: 1 0 200px; }
+
+  .related-content a {
+    flex: 0 1 48%; } }
+@media (max-width: 500px) {
+  header.interior h1, header.interior span {
+    max-width: 100%; }
+
+  .article-wrap .contain {
+    display: block; }
+  .article-wrap nav {
+    margin: 30px -4.5% -50px;
+    padding-bottom: 50px; }
+    .article-wrap nav a {
+      display: inline-block;
+      margin: 0;
+      padding: 0.3em 0.9em; }
+
+  .sticky {
+    position: static;
+    width: 60%;
+    margin: auto;
+    text-align: center; } }
+@media (max-width: 400px) {
+  .interior h1 {
+    font-size: 1.625em; } }

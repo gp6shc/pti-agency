@@ -41,13 +41,13 @@ for (var i = 0; i < menuItems.length; i++) {
 hamburger.addEventListener('click', toggleSideMenu);
 
 var mc = new Hammer(sideMenu);
-
 mc.on("panright", function(ev) {
 	if (ev.deltaX > 50) {
 		sideMenu.classList.remove('open');
 		document.body.removeEventListener('click', toggleSideMenu);
 	}
 });
+
 
 var pageHeader = document.querySelector('header');
 var lastScrollPos = 0;
@@ -61,9 +61,13 @@ function refreshHeader() {
 	}
 	
 	if (currentScrollPos > lastScrollPos) {
-		pageHeader.classList.add('small');
+		requestAnimationFrame( function() {
+			pageHeader.classList.add('small');		
+		});
 	}else if(currentScrollPos < (lastScrollPos - 42)) {
-		pageHeader.classList.remove('small');
+		requestAnimationFrame( function() {
+			pageHeader.classList.remove('small');
+		});
 	}
 	lastScrollPos = currentScrollPos;	
 }
@@ -80,6 +84,5 @@ function validateSearch(event) {
 		searchForm.firstElementChild.focus();
 	}
 }
-
 searchForm.addEventListener('submit', validateSearch);
 

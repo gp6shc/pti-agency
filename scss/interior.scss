@@ -85,12 +85,25 @@ header.interior {
 			}
 		}
 		
+		
 		ul + h3 {
 			margin-top: 1em;
 			padding-top: 1em;
 			border-top: 1px solid $brand-white;
 		}
 	}
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 160px;
+	margin-bottom: 1em;
+	transition: top 200ms linear;
+}
+
+.site-header.small + main .sticky {
+	top: 70px;
 }
 
 article {
@@ -112,34 +125,19 @@ article {
 .related-content {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	
 	a {
 		display: block;
 		color: white;
 		text-decoration: none;
 		flex: 0 1 23%;
-		position: relative;
-		overflow: hidden;
-		
-		&::after {
-			content: '';
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			background-color: rgba($secondary-blue, 0.6);
-			position: absolute;
-			top: -10%;
-			left: 50%;
-			transform: translateX(-50%) scale(0);
-			transform-origin: center;
-			transition: transform cubic-bezier(0.4, 0.01, 0.165, 0.99) 500ms;
-		}
 		
 		&:hover {
 			text-decoration: underline;
 			
-			&::after {
-				transform: translateX(-50%) scale(1.5);
+			.overlay::after {
+				transform: translate(-50%,-50%) scale(2);
 			}
 		}
 	}
@@ -149,5 +147,74 @@ article {
 		font-size: 1.1em;
 		z-index: 1;
 		position: relative;
+	}
+}
+
+.overlay {
+	position: relative;
+	overflow: hidden;
+	
+	&::after {
+		content: '';
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background-color: rgba($secondary-blue, 0.6);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%) scale(0);
+		transition: transform cubic-bezier(0.4, 0.01, 0.165, 0.99) 500ms;
+	}
+}
+
+@media (max-width: 680px) {
+	header.interior h1 {
+		max-width: calc(100% - 200px);
+	}
+	.article-wrap nav {
+		flex: 1 0 200px;
+	}
+	
+	.related-content {
+		a {
+			flex: 0 1 48%;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	header.interior {
+		h1,span {
+			max-width: 100%;
+		}
+	}
+	.article-wrap {
+		.contain {
+			display: block;
+		}
+		
+		nav {
+			margin: 30px -4.5% -50px;
+	    padding-bottom: 50px;
+	    
+	    a {
+		    display: inline-block;
+		    margin: 0;
+		    padding: 0.3em 0.9em;
+	    }
+		}
+	}
+	.sticky {
+		position: static;
+		width: 60%;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+@media (max-width: 400px) {
+	.interior h1 {
+		font-size: 1.625em;
 	}
 }

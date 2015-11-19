@@ -55,6 +55,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/interior_sidebar.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/interior_sidebar.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/jade\/includes\/footer.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -110,34 +128,34 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/js\/fastclick.js": {
+	"\/js\/includes\/fastclick.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/fastclick.js",
-		"outputAbbreviatedPath": "\/js\/min\/fastclick-min.js",
+		"inputAbbreviatedPath": "\/js\/includes\/fastclick.js",
+		"outputAbbreviatedPath": "\/js\/includes\/min\/fastclick-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/flickity.pkgd.js": {
+	"\/js\/includes\/flickity.pkgd.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/flickity.pkgd.js",
-		"outputAbbreviatedPath": "\/js\/min\/flickity.pkgd-min.js",
+		"inputAbbreviatedPath": "\/js\/includes\/flickity.pkgd.js",
+		"outputAbbreviatedPath": "\/js\/includes\/min\/flickity.pkgd-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/hammer.js": {
+	"\/js\/includes\/hammer.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/hammer.js",
-		"outputAbbreviatedPath": "\/js\/min\/hammer-min.js",
+		"inputAbbreviatedPath": "\/js\/includes\/hammer.js",
+		"outputAbbreviatedPath": "\/js\/includes\/min\/hammer-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -171,6 +189,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/menu.js",
 		"outputAbbreviatedPath": "\/js\/min\/menu-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/menu-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/menu-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/menu-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -322,34 +351,36 @@
 "manualImportLinks": {
 	"\/js\/main.js": [
 		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/js\/fastclick.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/js\/hammer.js",
-			"position": 1,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/js\/flickity.pkgd.js",
-			"position": 2,
-			"type": 0
-			},
-		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/js\/menu.js",
-			"position": 3,
+			"position": 0,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/js\/slider.js",
-			"position": 4,
+			"position": 1,
 			"type": 1
+			}
+		],
+	"\/js\/menu.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/includes\/flickity.pkgd.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/includes\/fastclick.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/includes\/hammer.js",
+			"position": 2,
+			"type": 0
 			}
 		]
 	},
