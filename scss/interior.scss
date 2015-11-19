@@ -1,4 +1,4 @@
-header.interior {
+.interior {
 	background-color: $brand-white;
 	border-top: 30px solid $primary-blue;
 	color: $secondary-blue;
@@ -192,7 +192,7 @@ article {
 }
 
 @media (max-width: 560px) {
-	header.interior {
+	.interior.sidebar {
 		h1,span {
 			max-width: 100%;
 		}
